@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta  http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive coffee shop website design</title>
+
+    <!--font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!--custom css file link-->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+<!--  header section starts-->
+
+<header class="header">
+    <a href="#" class="logo">
+    <img src="image/pic2.png.jpg" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a> 
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
+        <button class="login-btn">LOGIN</button>
+    </nav>
+
+
+
+    <!--Popup Form-->
+    <div class="blur-bg-overlay"></div>
+<div class="form-popup">
+    <span class="close-btn material-symbols-rounded">close</span>
+    <div class="form-box login">
+        <div class="form-details">
+            <h2>Welcome Back</h2>
+            <p>Please log in using your personal information to stay connected with us.</p>
+
+        </div>
+        <div class="form-content">
+            <h2>LOGIN</h2>
+            <form action="#">
+                <div class="input-field">
+                    <input type="text">
+                    <label>Email</label>
+                </div>
+                <div class="input-field">
+                    <input type="password">
+                    <label>Password</label>
+                </div>
+                <a href="#" class="forget-pass">Forget password</a>
+                <button type="submit">Log In</button>
+            </form>
+            <div class="bottom-link">
+                Don't have an account?
+                <a href="#" id="signup-link">Signup</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-box signup">
+        <div class="form-details">
+            <h2>Create Account</h2>
+            <p>To become a part of our community, please sign up using your personal information.</p>
+
+        </div>
+        <div class="form-content">
+            <h2>SIGNUP</h2>
+            <form action="#">
+                <div class="input-field">
+                    <input type="text">
+                    <label>Enter your email</label>
+                </div>
+                <div class="input-field">
+                    <input type="password">
+                    <label>Create password</label>
+                </div>
+                <div class="policy-text">
+                    <input type="checkbox" id="policy">
+                    <label for="policy">
+                        I agree the
+                        <a href="#">Terms & Conditions</a>
+                    </label>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <div class="bottom-link">
+                Already have an account?
+                <a href="#" id="login-link">Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+       <input type="search" id="search-box" placeholder="search here...">
+       <label for="search-box"class="fas fa-search" ></label>
+    </div>
+
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="image/cart1.jpg" alt="">
+            <div class="content">
+                <h3>Hyssop tea </h3>
+                <div class="price"> Rs.500</div>
+                <a href="#" class="btn1">Add to Cart</a>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="image/habiscious.jpg" alt="">
+            <div class="content">
+                <h3>Habiscus</h3>
+                <div class="price"> Rs.600</div>
+                <a href="#" class="btn1">Add to Cart</a>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="image/Cart2.jpg" alt="">
+            <div class="content">
+                <h3>Gokhru Powder</h3>
+                <div class="price"> Rs.400</div>
+                <a href="#" class="btn1">Add to Cart</a>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="image/cart3.jpg" alt="">
+            <div class="content">
+                <h3>Neem Powder </h3>
+                <div class="price"> Rs.300</div>
+                <a href="#" class="btn1">Add to Cart</a>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="image/cart4.jpg" alt="">
+            <div class="content">
+                <h3>Shilajit </h3>
+                <div class="price"> Rs.800</div>
+                <a href="#" class="btn1">Add to Cart</a>
+            </div>
+        </div>
+        <a href="#" class="btn"> Checkout Now</a>
+    </div>
+
+</header>
+
+
+
+<!--header section ends-->
+
+<!--  home section starts  -->
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>Fresh Tea in the Morning</h3>
+        <p>Herbal tea is a natural, healthy, and flavorful beverage made from a blend of herbs, flowers, and fruits. 
+            It offers a variety of benefits such as relaxation, improved digestion, and boosted immunity. </p>
+        <a href="#" class="btn"> get yours now</a>
+
+    </div>
+</section>
+<!--  home section ends  -->
+
+<!-- about section start -->
+  <section class="about" id="about">
+   <h1 class="heading"><span>about</span> us </h1>
+
+   <div class="row">
+
+     <div class="image">
+        <img src="image/pic.png.jpg" alt="">
+     </div>
+     <div class="content1">
+        <h3>What Makes Our Tea Special ? </h3>
+        <p>Our herbal tea is special because it is made from the finest natural ingredients, 
+            carefully selected for their quality and purity. We use a blend of hand-picked herbs,
+             flowers, and fruits, ensuring each cup is rich in flavor and aroma. Every sip provides a
+              soothing and refreshing experience, perfect for any time of the day. The ingredients are sourced from sustainable farms, 
+              reflecting our commitment to environmental responsibility.</p>
+        <p>our herbal tea is free from artificial additives and preservatives, 
+            making it a healthy choice for everyone. It is crafted to offer not just great taste,
+             but also various health benefits, such as aiding digestion, reducing stress, and boosting the immune system.
+              Enjoying our herbal tea means indulging in a delicious, natural beverage that supports your well-being in every cup.</p>
+            <a href="#" class="btn" >learn more</a>
+     </div>
+   </div>
+
+
+  </section>
+<!--about setion end-->
+
+
+ <section class="products" id="products">
+
+    <h1 class="heading"> our <span>products</span></h1>
+
+    <div class="box-container1">
+
+        <div class="box1">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="imag">
+                <img src="image/p1.png" alt="">
+            </div>
+            <div class="conten">
+                <h3>Green Tea</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half.alt"></i>
+                </div>
+                <div class="price">Rs.500 <span>Rs.700</span></div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="imag">
+                <img src="image/p2.png" alt="">
+            </div>
+            <div class="conten">
+                <h3>Muna Leaves</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half.alt"></i>
+                </div>
+                <div class="price">Rs.600 <span>Rs.700</span></div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="imag">
+                <img src="image/p3.png" alt="">
+            </div>
+            <div class="conten">
+                <h3>Detox Tea</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half.alt"></i>
+                </div>
+                <div class="price">Rs.1000 <span>Rs.1200</span></div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="imag">
+                <img src="image/p4.png" alt="">
+            </div>
+            <div class="conten">
+                <h3>Mugwort</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half.alt"></i>
+                </div>
+                <div class="price">Rs.900 <span>Rs.1000</span></div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="imag">
+                <img src="image/p5.png" alt="">
+            </div>
+            <div class="conten">
+                <h3>Raspberry Leaf</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half.alt"></i>
+                </div>
+                <div class="price">Rs.700 <span>Rs.800</span></div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="imag">
+                <img src="image/p6.png" alt="">
+            </div>
+            <div class="conten">
+                <h3>Herbal Tea</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half.alt"></i>
+                </div>
+                <div class="price">Rs.850 <span>Rs.900</span></div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="imag">
+                <img src="image/p7.png" alt="">
+            </div>
+            <div class="conten">
+                <h3>Evening Blend</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half.alt"></i>
+                </div>
+                <div class="price">Rs.550 <span>Rs.700</span></div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="imag">
+                <img src="image/p8.png" alt="">
+            </div>
+            <div class="conten">
+                <h3>Happy Gut</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half.alt"></i>
+                </div>
+                <div class="price">Rs.960 <span>Rs.1000</span></div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+ </section>
+<!--  review section starts  -->
+
+<section class="review" id="review">
+
+<h1 class="heading"> customer's <span>review</span></h1>
+
+<div class="box-container2">
+
+    <div class="box2">
+        <img src="" alt="" >
+        <p>"I absolutely love this herbal tea! The blend of herbs and fruits creates a delightful flavor that is both soothing and refreshing.
+             It's perfect for unwinding after a long day. Highly recommend!"</p>
+             <img src="image/1.image.jpg" class="user" alt="">
+            <h3>john doe</h3>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half.alt"></i>
+            </div>
+    </div>
+
+    <div class="box2">
+        <img src="" alt="" >
+        <p>"This herbal tea has become a staple in my daily routine. Not only does it taste great, 
+            but I've also noticed improvements in my digestion and overall well-being.
+             It's wonderful to enjoy a tea that's both delicious and beneficial."</p>
+             <img src="image/image.jpg" class="user" alt="">
+            <h3>Binit Sahi</h3>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half.alt"></i>
+            </div>
+    </div>
+
+    <div class="box2">
+        <img src="" alt="" >
+        <p>"What I appreciate most about this herbal tea is its natural and pure ingredients.
+             Knowing that there are no artificial additives or preservatives gives me peace of mind. Plus, 
+             the aroma and taste are simply amazing!"</p>
+             <img src="image/image2.jpg" class="user" alt="">
+            <h3>dinah Mishra</h3>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half.alt"></i>
+            </div>
+    </div>
+    
+    <div class="box2">
+        <img src="" alt="">
+        <p>"Whether it's morning or night, this herbal tea is perfect for any time of the day. 
+            It's light and calming in the evening, yet invigorating enough for a morning pick-me-up. 
+            A versatile and fantastic tea!"</p>
+             <img src="image/image3.jpg" class="user" alt="">
+            <h3>Arina Shah</h3>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half.alt"></i>
+            </div>
+    </div>
+</div>
+
+</section>
+
+<!--  review section ends  -->
+
+<!--contact section starts-->
+<section class="contact" id="contact">
+
+    <h1 class="heading"><span>contact</span> us </h1>
+     
+    <div class="row1">
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28141.73252423309!2d84.08808375000002!3d28.155115399999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i7
+        68!4f13.1!3m3!1m2!1s0x3995bd4678a7fb73%3A0x19d6fb9ad2f75933!2sBegnastal%20Canal!5e0!3m2!1sen!2snp!4v1718619366992!5m2!1sen!2snp" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <form action="">
+            <h3>Get in Touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="name">
+             </div>
+             <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+             </div>
+             <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="number">
+             </div>
+
+             <input type="submit" value="contact now" class="btn">
+        </form>
+ 
+    </div>
+</section>
+
+<!--contact section ends-->
+
+<!--  blogs section starts -->
+
+<section class=" blogs" id="blogs">
+
+    <h1 class="heading">our <span>blogs</span></h1>
+
+    <div class="box-container4">
+
+        <div class="box4">
+            <div class="image4">
+                <img src ="image/blog1.jpg" alt="">
+            </div>
+            <div class="content4">
+                <a href="#" class="title">Tasty and Refreshing Tea </a>
+                <span>By Admin/21st june,2024</span>
+                <P> Herbal teas contain vitamins, minerals, and other nutrients that can 
+                    contribute to overall health and well-being.</P>
+                    <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box4">
+            <div class="image4">
+                <img src ="image/blog2.jpg" alt="">
+            </div>
+            <div class="content4">
+                <a href="#" class="title">Tasty and Refreshing Tea </a>
+                <span>By Admin/21st june,2024</span>
+                <P> Green tea and Hibiscus can support
+                     metabolism and help with weight management.</P>
+                    <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+        <div class="box4">
+            <div class="image4">
+                <img src ="image/blog3.jpg" alt="">
+            </div>
+            <div class="content4">
+                <a href="#" class="title">Tasty and Refreshing Tea </a>
+                <span>By Admin/21st june,2024</span>
+                <P>Peppermint and Ginger can help soothe the digestive system
+                     and alleviate issues like bloating or indigestion.</P>
+                    <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--  blogs section ends -->
+
+<!--footer section starts-->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-whatsapp"></a>
+    </div>
+
+    <div class="links1">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">products</a>
+        <a href="#">review</a>
+        <a href="#">contact</a>
+        <a href="#">blogs</a>
+    </div>
+
+    <div class="num">We can deliver product to your loves one from our shop.Delivery time.....</div>
+        <div class="phn">Sat-Fri 8-8 |Sun-Fri 10-5 </div>
+        <div class="dig">+977 9806########</div>
+        <div class="add">BegnasTal,Pokhara Lekhnath</div>
+</div>
+    <div class="credit">created by <span>mr.Web Designer</span> | all rights reserved</div>
+ 
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--footer section ends-->
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--custom js file link --> 
+  <script src="script.js"></script> 
+
+    
+</body>
+</html>
